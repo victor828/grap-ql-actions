@@ -19,7 +19,7 @@ RUN yarn install --prod --frozen-lockfile
 
 
 FROM node:19-alpine3.15 as prod
-EXPOSE 3000
+EXPOSE 3050
 WORKDIR /app
 ENV APP_VERSION=${APP_VERSION}
 COPY --from=prod-deps /app/node_modules ./node_modules

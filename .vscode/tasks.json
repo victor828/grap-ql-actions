@@ -1,0 +1,33 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "command": "docker",
+            "args": [
+                "build",
+                "-t",
+                "victor828/docker-graphql:1.0.2",
+                "."
+            ],
+            "options": {
+                "cwd": "/home/victorusuario/Downloads/graphqlactions-221220-084841/graphql-actions"
+            },
+            "problemMatcher": [],
+            "label": "docker build"
+        },
+        {
+            "type": "shell",
+            "command": "docker",
+            "args": [
+                "push",
+                "victor828/docker-graphql:1.0.2"
+            ],
+            "options": {
+                "cwd": "/home/victorusuario/Downloads/graphqlactions-221220-084841/graphql-actions"
+            },
+            "problemMatcher": [],
+            "label": "docker push"
+        }
+    ]
+}

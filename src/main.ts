@@ -8,12 +8,13 @@ async function bootstrap() {
   app.useGlobalPipes(
     new ValidationPipe({
       whitelist: true,
-      forbidNonWhitelisted: true, 
-    })
+      forbidNonWhitelisted: true,
+    }),
   );
 
-  await app.listen(3000);
-  
-  console.log('Aplicación corriendo en puerto: ', 3000 );
+  await app.listen(3050);
+
+  console.log('Aplicación corriendo en puerto: ', 3050);
+  console.log('http://localhost:3050/graphql');
 }
 bootstrap();
